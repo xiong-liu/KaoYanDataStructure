@@ -5,17 +5,18 @@
 #include <stdlib.h>
 #include "DynamicArray.h"
 
+/**
+ * 初始化动态数组的顺序表
+ * @param List
+ */
 void InitList(SeqList *List) {
-    List->data = (ElementType *) malloc(sizeof(ElementType) * InitSize);
-    for (int i = 0; i < InitSize; ++i) {
-        List->data[i] = 0;
-    }
+    List->data = (ElementType *) calloc(InitSize, sizeof(ElementType));
     List->length = 0;
     List->MaxSize = InitSize;
 }
 
 void display(SeqList *List) {
     for (int i = 0; i < List->MaxSize; ++i) {
-        printf("%d\n", List[i]);
+        printf("%d\n", List->data[i]);
     }
 }

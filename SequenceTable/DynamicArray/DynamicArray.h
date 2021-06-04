@@ -5,12 +5,12 @@
 #ifndef DATASTRUCTURE_DYNAMICARRAY_H
 #define DATASTRUCTURE_DYNAMICARRAY_H
 
-#define InitSize 10
+#define InitSize 100
 
 typedef int ElementType;
 
 typedef struct {
-    int *data;
+    ElementType *data;
     int MaxSize, length;
 } SeqList;
 
