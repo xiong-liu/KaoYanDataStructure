@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "SequenceTable/DynamicArray.h"
+#include "DynamicArray.h"
 
 int main(int argc, char *argv[]) {
-    test();
+    SeqList list;
+    InitList(&list);
+    display(&list);
 }

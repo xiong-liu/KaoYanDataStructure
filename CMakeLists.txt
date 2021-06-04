@@ -8,6 +8,8 @@ add_subdirectory(SequenceTable)
 
 add_executable(DataStructure main.c)
 
+include_directories(SequenceTable/DynamicArray)
+
 target_link_libraries(DataStructure SequenceTableDynamicArray)
 
 
